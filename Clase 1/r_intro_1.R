@@ -238,6 +238,16 @@ sum(vec4, na.rm = TRUE)
 is.na(vec4)  # NA is still in the vector & only removed from the calculation
 
 
+# Funciones sobre vectores
+#--------------------------
+vec5<-c(1:10)
+tmp<-vec1+vec5
+tmp2<-vec1*vec5
+tmp3<-vec1-mean(vec5)
+
+
+
+
 				
 # --------------------------------
 # -- III. Trabajando con datos  --
