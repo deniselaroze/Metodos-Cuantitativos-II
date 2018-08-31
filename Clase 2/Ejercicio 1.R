@@ -2,8 +2,8 @@
 ### Respuestas Guia Ejercicios 1
 ### 31/08/2018
 #################################
-
-library()
+library(Hmisc)
+library("?")
 
 # 1) Bajar datos del banco mundial u otro organismo relevante para sus tema de investigación. Pueder ser útil utilizar el paquete "wbstats" y
 # la función de más abajo o ir directamente a las páginas del banco mundial a buscar los datos
@@ -28,16 +28,25 @@ df$varname<-ifelse(condicion, valor.si, valor.otro)
 
 # 4a) Hacer una prueba de t de una sola muestra
 
+t.test(variable, media) 
+
 # 4b) Hacer una prueba de t de dos muestras (para eso separar los datos en dos grupos que sean teóricamente razonables)
 
+t.test(variable ~ dymmy, data = datos)
 
 # 5a) Calcular la covarianza entre dos variables de interés del DF que generaron
+
+cov()  # opciones use = "complete.obs" tal vez sea útil
 
 # 5b) Interpretar los resultados
 
 
 # 6a) Calcular la correlación entre dos variables de interés del DF que generaron
 
-# 6b) Interpretar los resultsdos
+cor()
+cor.test()
+rcorr()
+
+# 6b) Interpretar los resultados
 
 
